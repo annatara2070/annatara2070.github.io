@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Redaction:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+
+*{
+   padding: 0;
+   margin: 0;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding:0;
+}
+
+.container {
+    background-color: white;
+    width: 100%;
+    max-width: 800px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* --- Шапка --- */
+.header{
+    background-color:white;
+    text-align: center;
+    padding: 10;
+}
+
+.subtitle{
+    font-family: "Cinzel Decorative", serif;
+    font-size: 30;
+    letter-spacing: 3px;
+    color:rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+.title{
+    font-family: "Castoro", serif;
+    font-size: 70px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: rgb(0, 0, 0);
+    border-bottom: 3px solid #000000;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.name{
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 24px;
+    letter-spacing: 4px;
+    color: #444;
+    font-weight: 600;
+}
+
+/* --- Блок Обо мне --- */
+.about {
+    display: flex;
+    gap: 40px;
+}
+
+.photo {
+    width: 280px;
+    height: 300px;
+    background-color: #f0eff3; 
+    flex-shrink: 0;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text{
+    color: #eae9ed;
+    flex: 1;
+}
+
+.text h3{
+    
+    font-size: 32px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text p{
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #c9c6cd;
+}
+
+/* --- Блок Мои проекты --- */
+.projects{
+    width: 100%;
+}
+
+.projects-title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: #eae9ed;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #f0eff3; 
+    width: 100%;
+    aspect-ratio: 4 / 3; 
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.05); 
+}
+
+.footer {
+    background-color: #f0eff3;
+    height: 80px;
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .photo {
+        width: 100%;
+    }
+    
+    .title {
+        font-size: 45px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
